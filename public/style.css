@@ -28,7 +28,6 @@ article {
     "img intro" 0.5fr
     "rating rating" 1fr
     "spotify spotify" 1fr
-    "footer footer" 1fr
     / 1fr 1fr;
   gap: 20px;
 }
@@ -81,12 +80,12 @@ article {
   grid-area: github;
 }
 
-a {
+.github-link a {
   border-radius: 15px;
   color: #ffffff;
   font: var(--button-font);
   background-color: var(--eliza-pink);
-  color: white;
+  color: #ffffff;
   padding: 14px 160px;
   text-align: center;
   text-decoration: none;
@@ -95,6 +94,39 @@ a {
 
 .spotify {
   grid-area: spotify;
+}
+
+footer {
+  margin: 25px;
+
+  display: grid;
+  grid:
+    "socials" 1fr
+    "quote" 1fr
+    / 1fr;
+  gap: 20px;
+}
+
+.social-media {
+  grid-area: socials;
+}
+
+.social-media span {
+  margin: 25px;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.quote {
+  grid-area: quote;
+}
+
+.quote h2 {
+  font: var(--primary-font);
+  text-align: center;
+  letter-spacing: 0.04em;
 }
 
 /* 
