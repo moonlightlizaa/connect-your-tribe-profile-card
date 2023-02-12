@@ -6,6 +6,7 @@
   --eliza-dark: #252122;
   --eliza-grey: #595959;
   --eliza-pink: #dd365e;
+  --eliza-white: #ffffff;
 
   --title-font: 400 2.5em "Poppins", sans-serif;
   --primary-font: 300 1em "Poppins", sans-serif;
@@ -136,14 +137,15 @@ dd {
 
 .github-link a {
   border-radius: 15px;
-  color: #ffffff;
+  color: var(--eliza-white);
   font: var(--button-font);
   background-color: var(--eliza-pink);
-  color: #ffffff;
-  padding: 14px 160px;
+  color: var(--eliza-white);
+  padding: 14px 100px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  width: 100%;
 }
 
 .spotify {
@@ -151,7 +153,7 @@ dd {
 }
 
 footer {
-  margin: 0px 25px 25px 25px;
+  margin: 25px 25px 25px 25px;
 
   display: grid;
   grid:
@@ -213,7 +215,7 @@ footer {
                         30em
 */
 
-@media (min-width: 30em) {
+/* @media (min-width: 30em) {
   header {
     margin: 25px;
     display: flex;
@@ -376,7 +378,7 @@ footer {
     text-align: center;
     letter-spacing: 0.04em;
   }
-}
+} */
 
 /* 
                         Media Queries following
@@ -386,4 +388,78 @@ footer {
                         30em
 */
 
-@media screen and (min-width: 64.0625em);
+@media screen and (min-width: 30em) {
+  body {
+    background-color: var(--eliza-dark);
+  }
+  main {
+    width: 90%;
+    background-color: var(--eliza-white);
+    margin: 50px auto;
+    padding: 25px;
+
+    border-radius: 15px;
+  }
+
+  footer {
+    width: 90%;
+    background-color: var(--eliza-white);
+  }
+}
+
+@media screen and (min-width: 42em) {
+  body {
+    background-color: var(--eliza-dark);
+  }
+  main {
+    width: 70%;
+    background-color: var(--eliza-white);
+    margin: 50px auto;
+    padding: 25px;
+
+    border-radius: 15px;
+  }
+
+  footer {
+    width: 70%;
+    background-color: var(--eliza-white);
+  }
+}
+
+@media screen and (min-width: 53em) {
+  body {
+    background-color: var(--eliza-dark);
+  }
+  main {
+    width: 50%;
+    background-color: var(--eliza-white);
+    margin: 50px auto;
+    padding: 25px;
+
+    border-radius: 15px;
+  }
+
+  footer {
+    width: 50%;
+    background-color: var(--eliza-white);
+  }
+}
+
+@media screen and (min-width: 70em) {
+  body {
+    background-color: var(--eliza-dark);
+  }
+  main {
+    width: 40%;
+    background-color: var(--eliza-white);
+    margin: 50px auto;
+    padding: 25px;
+
+    border-radius: 15px;
+  }
+
+  footer {
+    width: 40%;
+    background-color: var(--eliza-white);
+  }
+}
