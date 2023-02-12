@@ -4,11 +4,13 @@
 
 :root {
   --eliza-dark: #252122;
+  --eliza-grey: #595959;
   --eliza-pink: #dd365e;
 
   --title-font: 400 2.5em "Poppins", sans-serif;
   --primary-font: 300 1em "Poppins", sans-serif;
   --button-font: 700 1em "Poppins", sans-serif;
+  --header-font: 500 1em "Poppins", sans-serif;
 }
 
 * {
@@ -20,14 +22,26 @@
                             MOBILE FIRST 
 */
 
+header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  font: var(--header-font);
+  color: var(--eliza-grey);
+  margin-top: 10px;
+}
+
 article {
-  margin: 25px;
+  margin: 25px 20px 0px 20px;
 
   display: grid;
   grid:
     "img intro" 0.5fr
-    "rating rating" 1fr
-    "spotify spotify" 1fr
+    "rating rating" 0.8fr
+    "spotify spotify" 0.8fr
     / 1fr 1fr;
   gap: 20px;
 }
@@ -66,14 +80,54 @@ article {
   grid-area: rating;
   display: grid;
   grid:
-    "skills" 1fr
-    "github" 25%
+    "skills" 50%
+    "github" 50%
     / 1fr;
   gap: 20px;
 }
 
 .skills {
   grid-area: skills;
+}
+
+dl {
+  width: 100%;
+  display: grid;
+  grid:
+    "html-dd css-dd js-dd" 1fr
+    "html-dt css-dt js-dt" 1fr
+    / 1fr 1fr 1fr;
+
+  justify-items: center;
+  align-items: start;
+
+  text-align: center;
+
+  font: var(--primary-font);
+}
+
+dt {
+  padding-top: 0.25rem;
+  margin-top: 0.25rem;
+  text-align: center;
+  font-size: 17px;
+}
+dt:nth-of-type(1) {
+  grid-area: html-dt;
+}
+dt:nth-of-type(2) {
+  grid-area: css-dt;
+}
+dt:nth-of-type(3) {
+  grid-area: js-dt;
+}
+
+dd {
+  margin: 0;
+  padding-left: 0;
+  transition: 0.1s 0.1s;
+  text-align: center;
+  font-size: 20px;
 }
 
 .github-link {
@@ -97,7 +151,7 @@ article {
 }
 
 footer {
-  margin: 25px;
+  margin: 0px 25px 25px 25px;
 
   display: grid;
   grid:
@@ -109,10 +163,31 @@ footer {
 
 .social-media {
   grid-area: socials;
+  display: grid;
+  grid:
+    "pinterest linkedin instagram spotify-2" 1fr
+    / 1fr 1fr 1fr 1fr;
+  gap: 25px;
 }
 
-.social-media span {
-  margin: 25px;
+.social-media img {
+  width: 35px;
+}
+
+.pinterest {
+  grid-area: pinterest;
+}
+
+.linkedin {
+  grid-area: linkedin;
+}
+
+.instagram {
+  grid-area: instagram;
+}
+
+.spotify-2 {
+  grid-area: spotify;
 }
 
 .social-media a {
@@ -121,6 +196,7 @@ footer {
 
 .quote {
   grid-area: quote;
+  margin-top: 25px;
 }
 
 .quote h2 {
@@ -131,7 +207,183 @@ footer {
 
 /* 
                         Media Queries following
+
+
+
+                        30em
 */
 
 @media (min-width: 30em) {
+  header {
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header p {
+    font: var(--header-font);
+    color: var(--eliza-grey);
+    margin-top: 10px;
+  }
+
+  article {
+    margin: 25px 25px 0px 25px;
+
+    display: grid;
+    grid:
+      "img intro" 0.5fr
+      "rating rating" 0.8fr
+      "spotify spotify" 0.8fr
+      / 1fr 1fr;
+    gap: 20px;
+  }
+
+  .profile-picture {
+    grid-area: img;
+  }
+
+  .profile-picture img {
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  .intro-text {
+    grid-area: intro;
+    display: grid;
+    grid:
+      "title" 0.5fr
+      "bio" 1fr
+      / 1fr;
+    gap: 10px;
+  }
+
+  .intro-text .title {
+    grid-area: title;
+    font: var(--title-font);
+    color: var(--eliza-dark);
+  }
+
+  .intro-text .bio {
+    grid-area: bio;
+    font: var(--primary-font);
+  }
+
+  .rating {
+    grid-area: rating;
+    display: grid;
+    grid:
+      "skills" 50%
+      "github" 50%
+      / 1fr;
+    gap: 20px;
+  }
+
+  .skills {
+    grid-area: skills;
+  }
+
+  dl {
+    width: 100%;
+    display: grid;
+    grid:
+      "html-dd css-dd js-dd" 1fr
+      "html-dt css-dt js-dt" 1fr
+      / 1fr 1fr 1fr;
+
+    justify-items: center;
+    align-items: start;
+
+    text-align: center;
+    border-radius: 0 0 1rem 1rem;
+
+    font: var(--primary-font);
+  }
+
+  dt {
+    padding-top: 0.25rem;
+    margin-top: 0.25rem;
+    text-align: center;
+    font-size: 17px;
+  }
+  dt:nth-of-type(1) {
+    grid-area: html-dt;
+  }
+  dt:nth-of-type(2) {
+    grid-area: css-dt;
+  }
+  dt:nth-of-type(3) {
+    grid-area: js-dt;
+  }
+
+  dd {
+    margin: 0;
+    padding-left: 0;
+    transition: 0.1s 0.1s;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .github-link {
+    grid-area: github;
+  }
+
+  .github-link a {
+    border-radius: 15px;
+    color: #ffffff;
+    font: var(--button-font);
+    background-color: var(--eliza-pink);
+    color: #ffffff;
+    padding: 14px 160px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .spotify {
+    grid-area: spotify;
+  }
+
+  footer {
+    margin: 0px 25px 25px 25px;
+
+    display: grid;
+    grid:
+      "socials" 1fr
+      "quote" 1fr
+      / 1fr;
+    gap: 20px;
+  }
+
+  .social-media {
+    grid-area: socials;
+  }
+
+  .social-media span {
+    margin: 25px;
+  }
+
+  .social-media a {
+    text-decoration: none;
+  }
+
+  .quote {
+    grid-area: quote;
+    margin-top: 25px;
+  }
+
+  .quote h2 {
+    font: var(--primary-font);
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
 }
+
+/* 
+                        Media Queries following
+
+
+
+                        30em
+*/
+
+@media screen and (min-width: 64.0625em);
