@@ -242,6 +242,24 @@ footer {
     gap: 20px;
   }
 
+  .profile-picture img {
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  .intro-text .title {
+    grid-area: title;
+    font: var(--title-font);
+    color: var(--eliza-dark);
+  }
+
+  .intro-text .bio {
+    grid-area: bio;
+    font: var(--primary-font);
+    color: var(--eliza-dark);
+    font-size: 1.2em;
+  }
+
   footer {
     width: 90%;
     background-color: var(--eliza-white);
@@ -267,6 +285,24 @@ footer {
     padding: 25px;
 
     border-radius: 15px;
+  }
+
+  .profile-picture img {
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  .intro-text .title {
+    grid-area: title;
+    font: var(--title-font);
+    color: var(--eliza-dark);
+  }
+
+  .intro-text .bio {
+    grid-area: bio;
+    font: var(--primary-font);
+    color: var(--eliza-dark);
+    font-size: 1.2em;
   }
 
   footer {
@@ -340,6 +376,7 @@ footer {
     grid-area: bio;
     font: var(--primary-font);
     color: var(--eliza-dark);
+    font-size: 1.2em;
   }
 
   footer {
