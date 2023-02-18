@@ -1,30 +1,37 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# Profile Card
+
+![devices copy](https://user-images.githubusercontent.com/106411511/219885243-69b09da5-647b-4371-b52c-7b6025339676.jpg)
+<a href="https://different-jade-sockeye.cyclic.app/">Profile Card Eliza</a>
 
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
+  * [Gebruikte tools](#gebruikte-tools)
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+Ik heb mijn profile card uit sprint 1 een redesign gegeven. Hiervoor heb ik gebruik gemaakt van Node.js en de Who Is API. Ik heb mijn gehele process hiervan gedocumenteerd in mijn wiki. Hier kan je ook mijn schetsen en nieuwe design zien. 
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-## Installatie
+Er is voor dit project gebruik gemaakt van HTML, EJS , CSS en JavaScript. De website is responsive, dus je zou het ook kunnen gebruiken op de telefoon, tablet of andere apparaten.
 
-## Gebruik
+### Gebruikte tools
 
-## Bronnen
+Voor mijn Profile Card heb ik gebruikt gemaakt van de volgende tools: 
+
+* GoodNotes App op iPad
+* Figma
+* Visual Studio Code
+* Node.JS
+* Who Is API
+* Cyclic.sh
+* Pinterest
+* Behance
 
 ## Licentie
 
