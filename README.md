@@ -1,6 +1,6 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Profile Card
+# Profile Card 🌷
 
 ![devices copy](https://user-images.githubusercontent.com/106411511/219885243-69b09da5-647b-4371-b52c-7b6025339676.jpg)
 <a href="https://different-jade-sockeye.cyclic.app/">Profile Card Eliza</a>
