@@ -33,6 +33,10 @@ Voor mijn Profile Card heb ik gebruikt gemaakt van de volgende tools:
 * Pinterest
 * Behance
 
+## Het process
+
+In <a href="https://github.com/moonlightlizaa/connect-your-tribe-profile-card/wiki"> mijn wiki </a> kan je het process van het maken van mijn nieuwe Profile Card bijhouden! 
+
 ## Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
